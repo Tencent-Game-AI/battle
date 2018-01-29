@@ -12,3 +12,11 @@ register(
   entry_point='battle.arena_sc2.agents.noop_agent:NoopAgent',
 )
 
+register(
+  id='SLAgent',
+  type=BattleType.agent,
+  model_path="",
+  use_gpu=False,
+  entry_point='battle.arena_sc2.agents.sl_agent:SLAgent',
+)
+
